@@ -44,7 +44,7 @@ def train(policy, step, state3):
 		val = sum(state3[0,pos[i,:]])
 		num = np.shape(np.where(state3[0,pos[i,:]]))[1]
 		if val==2 and num == 1:
-			a = pos[i, state3[pos[i,:]==0] #ここから新幹線の中で書いた
+			a = pos[i, state3[pos[i,:]==0] 
 			reach = 1
 			break
 	if reach == 0:
